@@ -1,0 +1,23 @@
+{
+  "name": "flachware.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass scss -o assets/stylesheets --output-style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flachware/flachware.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flachware/flachware.github.io/issues"
+  },
+  "homepage": "https://github.com/flachware/flachware.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
