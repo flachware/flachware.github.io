@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-      - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v1
 
-      - name: Build and deploy
-        uses: flachware/github-pages-deploy-action@master
+    - name: Build and deploy
+      uses: flachware/github-pages-deploy-action@master
 
