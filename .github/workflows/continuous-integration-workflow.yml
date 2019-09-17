@@ -8,18 +8,11 @@ jobs:
   build:
     name: Build website
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10.x]
+
     steps:
+      - name: Checkout
       - uses: actions/checkout@v1
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+      - name: Build and deploy
+        uses: flachware/github-pages-deploy-action@master
 
-      - name: Build stylesheets
-        run: |
-          npm i
-          npm run build --if-present
